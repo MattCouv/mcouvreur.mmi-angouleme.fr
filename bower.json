@@ -1,0 +1,21 @@
+{
+  "name": "mcouvreur.mmi-angouleme.fr",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-translate": "~2.8.1",
+    "angular-translate-handler-log": "~2.8.1",
+    "angular-translate-loader-static-files": "~2.8.1",
+    "angular-translate-storage-local": "~2.8.1"
+  }
+}
