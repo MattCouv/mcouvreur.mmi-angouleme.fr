@@ -1,16 +1,49 @@
 <!DOCTYPE HTML>
 <html lang="{{ lang }}" ng-app="Multilingual">
 <head>
-  <title>Matthieu Couvreur</title>
-  <meta charset="utf-8">
+  		<meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Matthieu Couvreur</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
 </head>
-		<h2 translate="HELLO"></h2>
-		<p translate="WELCOME_MESSAGE"></p>
+		<div id="container">
+            <!-- nav is at the bottom for mobile users -->
+            <div id="nav">
+                <table class="navTable">
+                    <tbody class="navTableBody">
+                        <tr class="navTableRow">
+                            <td ><a class="navBtnContainer"href="#" id="aboutBtn" translate="BUTTON_ABOUT"></a></td>
+                            <td><a class="navBtnContainer" href="#" id="projectBtn" translate="BUTTON_PROJECT"></a></td>
+                            <td><a class="navBtnContainer" href="#" id="contactBtn" translate="BUTTON_CONTACT"></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+		<div id="main">
+			<p>Welcome ladies and gentlemans!</p>
+			<h2 translate="HELLO"></h2>
+			<p translate="WELCOME_MESSAGE"></p>
+        </div>
+
+
 		<div ng-controller="LanguageSwitchController">
 			<button ng-click="changeLanguage('fr')" translate="BUTTON_LANG_FR"></button>
 			<button ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN"></button>
 			<button ng-click="changeLanguage('es')" translate="BUTTON_LANG_ES"></button>
 		</div>
+
+
+		<div id="footer"></div>
+
+        </div>
 <body>
   <script src="js/app.min.js"></script>
 </body>
